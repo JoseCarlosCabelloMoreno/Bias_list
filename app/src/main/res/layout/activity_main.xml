@@ -15,7 +15,8 @@
             android:id="@+id/image"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            tools:src="@tools:sample/avatars">
+            android:src="@android:drawable/ic_menu_camera"
+           >
         </ImageView>
         <EditText
             android:id="@+id/nombre"
@@ -42,6 +43,67 @@
             android:layout_toEndOf="@+id/image">
         </EditText>
 
+        <View
+            android:id="@+id/margen"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/image"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/biotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/margen"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/bio"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/biotext"
+            android:layout_marginTop="10dp"
+            android:hint="@string/escribe_algo_sobre_tu_idol"
+            />
+        <TextView
+            android:id="@+id/Calificaciontext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bio"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:hint="@string/calificacion"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Calificaciontext"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:numStars="5"
+            android:layout_centerHorizontal="true"
+            android:progressTint="@color/yellow"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            android:hint="Guardar"
+            android:backgroundTint="@color/button"
+            />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

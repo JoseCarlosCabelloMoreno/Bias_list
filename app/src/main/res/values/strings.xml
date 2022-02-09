@@ -2,4 +2,7 @@
     <string name="app_name">Bias_list</string>
     <string name="nombre_del_artista">Nombre del artista</string>
     <string name="alias">Alias</string>
+    <string name="escribe_algo_sobre_tu_idol">Escribe algo sobre tu idol</string>
+    <string name="bio">Bio</string>
+    <string name="calificacion">Calificacion</string>
 </resources>
