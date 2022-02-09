@@ -92,7 +92,6 @@
             android:layout_below="@id/Calificaciontext"
             android:layout_marginTop="16dp"
             android:background="@color/white"
-            android:numStars="5"
             android:layout_centerHorizontal="true"
             android:progressTint="@color/yellow"
             />
