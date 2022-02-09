@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bias_list</string>
+    <string name="nombre_del_artista">Nombre del artista</string>
+    <string name="alias">Alias</string>
+</resources>
