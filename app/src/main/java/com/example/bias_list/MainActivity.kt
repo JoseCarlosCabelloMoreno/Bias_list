@@ -12,11 +12,19 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.save.setOnClickListener{
-            openDetailActivity()
+
+            val nombre=binding.nombre.text.toString()
+            val alias=binding.alias.text.toString()
+            val bio=binding.bio.text.toString()
+            val calificacion=binding.ratingBar.rating
+
+            val idol= Idol(nombre,alias,bio,calificacion)
+            openDetailActivity(idol)
         }
     }
-    private fun openDetailActivity(){
+    private fun openDetailActivity(idol: Idol){
         val intent=Intent(this,DetailActivity::class.java)
+        intent.putExtra(DetailActivity.idolKey,idol)
         startActivity(intent)
     }
 }
