@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.ImageView
+import androidx.core.graphics.drawable.toBitmap
 import com.example.bias_list.databinding.ActivityMainBinding
 
 
@@ -40,6 +41,8 @@ class MainActivity : AppCompatActivity() {
     private fun openDetailActivity(idol: Idol){
         val intent=Intent(this,DetailActivity::class.java)
         intent.putExtra(DetailActivity.idolKey,idol)
+        intent.putExtra(DetailActivity.bitmapKey,idolImagen.drawable.toBitmap())
+
         startActivity(intent)
     }
 
