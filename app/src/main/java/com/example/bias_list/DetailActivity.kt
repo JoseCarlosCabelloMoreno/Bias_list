@@ -19,12 +19,11 @@ class DetailActivity : AppCompatActivity() {
         val bundle=intent.extras!!
         val idol=bundle.getParcelable<Idol>(idolKey)!!
 
+        binding.idol=idol
+
 
         val botonVolver=binding.buttonBack
-        binding.textName.text=idol.nombre
-        binding.Alias.text=idol.alias
-        binding.Bio.text=idol.bio
-        binding.ratingBar2.rating=idol.calificacion
+
 
         botonVolver.setOnClickListener{
             intent= Intent(this,MainActivity::class.java)
